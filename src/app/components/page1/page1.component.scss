@@ -1,0 +1,144 @@
+@mixin center() {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page {
+  background: url('/assets/page1.jpeg');
+  height: 7500px;
+  width: 1280px;
+}
+
+#rank {
+  top: 1880px;
+}
+
+#padawan, #knight, #master {
+  top: 1880px;
+  width: 330px;
+  height: 725px;
+}
+#padawan{
+  left: 100px;
+}
+#knight{
+  @include center;
+}
+#master{
+  right: 100px;
+}
+
+#species {
+  top: 2920px;
+}
+
+#human, #near-human, #mammalian {
+  top: 2920px;
+  width: 360px;
+  height: 850px;
+}
+#human{
+  left: 75px;
+}
+#near-human{
+  @include center;
+}
+#mammalian{
+  right: 75px;
+}
+
+#reptilian, #aquatic, #other {
+  top: 3795px;
+  width: 360px;
+  height: 850px;
+}
+#reptilian{
+  left: 75px;
+}
+#aquatic{
+  @include center;
+}
+#other{
+  right: 75px;
+}
+
+#twilek, #togruta, #falleen, #duros, #fosh {
+  top: 4770px;
+  width: 210px;
+  height: 475px;
+}
+#twilek{
+  left: 65px;
+}
+#togruta{
+  left: 300px;
+}
+#falleen{
+  @include center;
+}
+#duros{
+  right: 300px;
+}
+#fosh{
+  right: 65px;
+}
+
+#miraluka, #ithorian, #sluissi, #aqualish, #chagrian {
+  top: 5270px;
+  width: 210px;
+  height: 475px;
+}
+#miraluka {
+  left: 65px;
+}
+#ithorian {
+  left: 300px;
+}
+#sluissi {
+  @include center;
+}
+#aqualish {
+  right: 300px;
+}
+#chagrian {
+  right: 65px;
+}
+
+#sullustan, #devaronian, #nikto, #selkath, #jawa {
+  top: 5770px;
+  width: 210px;
+  height: 475px;
+}
+#sullustan {
+  left: 65px;
+}
+#devaronian {
+  left: 300px;
+}
+#nikto {
+  @include center;
+}
+#selkath {
+  right: 300px;
+}
+#jawa {
+  right: 65px;
+}
+
+#gender {
+  top: 6595px;
+}
+
+#male, #female {
+  top: 6595px;
+  width: 360px;
+  height: 575px;
+}
+#male {
+  left: 250px;
+}
+#female {
+  right: 250px;
+}

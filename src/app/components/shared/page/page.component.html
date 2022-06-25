@@ -1,0 +1,23 @@
+<div class='page' [formGroup]='form'>
+  <ng-container *ngFor='let catagory of catagories()'>
+
+    <div class='fragment' id='{{catagory.id}}'></div>
+
+    <ng-template [ngIf]='catagory.max === 1'>
+      <mat-radio-group formControlName='{{catagory.id}}' >
+        <ng-container *ngFor='let trait of catagory.choices'>
+          <app-radio-button class='trait' [id]='trait.id' [form]='form' [trait]='trait' [catagory]='catagory'></app-radio-button>
+        </ng-container>
+      </mat-radio-group>
+    </ng-template>
+
+    <ng-template [ngIf]='catagory.max != 1'>
+      <div formArrayName='{{catagory.id}}' >
+        <ng-container *ngFor='let trait of catagory.choices'>
+          <app-checkbox class='trait' [id]='trait.id' [form]='form' [trait]='trait' [catagory]='catagory'></app-checkbox>
+        </ng-container>
+      </div>
+    </ng-template>
+
+  </ng-container>
+</div>

@@ -1,0 +1,20 @@
+app-checkbox {
+  position:absolute
+}
+::ng-deep mat-checkbox {
+  display:inline-block
+  width:100%
+  height:100%
+  border-radius: 20px
+  transition: background 400ms
+  label {
+    width:100%
+    height:100%
+  }
+  .mat-checkbox-inner-container {
+    display: none
+  }
+}
+::ng-deep .mat-checkbox-checked {
+  background:rgba(0, 238, 255, 0.356)
+}

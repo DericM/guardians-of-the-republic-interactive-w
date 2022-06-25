@@ -1,0 +1,207 @@
+@mixin center() {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page {
+  background: url('/assets/page2.jpeg');
+  height: 7000px;
+  width: 1280px;
+}
+
+#origin{
+  top: 350px;
+}
+
+#baby, #infant, #child {
+  top: 350px;
+  width: 330px;
+  height: 475px;
+}
+#baby{
+  left: 100px;
+}
+#infant{
+  @include center;
+}
+#child{
+  right: 100px;
+}
+
+#homeworld {
+  top: 1085px;
+}
+
+#the-temple, #the-core-worlds, #the-colonies, #the-inner-rim, #the-outer-rim {
+  top: 1085px;
+  width: 210px;
+  height: 475px;
+}
+#the-temple {
+  left: 65px + 12px;
+}
+#the-core-worlds {
+  left: 300px + 12px;
+}
+#the-colonies {
+  left: 535px + 12px;
+}
+#the-inner-rim {
+  right: 300px - 12px;
+}
+#the-outer-rim {
+  right: 65px - 15px;
+}
+
+#perks{
+  top: 1910px;
+}
+
+#adaptable, #agile, #attractive, #charismatic {
+  top: 1910px;
+  width: 265px;
+  height: 575px;
+}
+#adaptable {
+  left: 75px;
+}
+#agile {
+  left: 364px;
+}
+#attractive {
+  right: 364px;
+}
+#charismatic {
+  right: 75px;
+}
+
+#eidetic-memory, #energetic, #fast-learner, #kind {
+  top: 2510px;
+  width: 265px;
+  height: 575px;
+}
+#eidetic-memory {
+  left: 75px;
+}
+#energetic {
+  left: 364px;
+}
+#fast-learner {
+  right: 364px;
+}
+#kind {
+  right: 75px;
+}
+
+#natural-warrior, #patient, #powerful, #relentless {
+  top: 3110px;
+  width: 265px;
+  height: 575px;
+}
+#natural-warrior {
+  left: 75px;
+}
+#patient {
+  left: 364px;
+}
+#powerful {
+  right: 364px;
+}
+#relentless {
+  right: 75px;
+}
+
+#serene, #strong, #tough, #wise {
+  top: 3710px;
+  width: 265px;
+  height: 575px;
+}
+#serene {
+  left: 75px;
+}
+#strong {
+  left: 364px;
+}
+#tough {
+  right: 364px;
+}
+#wise {
+  right: 75px;
+}
+
+#complications{
+  top: 4635px;
+}
+
+#arrogance, #impatience, #phobia, #greed, #wrath {
+  top: 4635px;
+  width: 215px;
+  height:675px;
+}
+#arrogance {
+  left: 60px;
+}
+#impatience {
+  left: 295px;
+}
+#phobia {
+  @include center;
+}
+#greed {
+  right: 295px;
+}
+#wrath {
+  right: 60px;
+}
+
+#attachment, #defeat, #bad-influence, #weak, #sickly {
+  top: 5335px;
+  width: 215px;
+  height:675px;
+}
+#attachment {
+  left: 60px;
+  height:385px;
+}
+#defeat {
+  left: 295px;
+}
+#bad-influence {
+  @include center;
+}
+#weak {
+  right: 295px;
+}
+#sickly {
+  right: 60px;
+}
+
+#relationship {
+  top:5720px;
+  width: 215px;
+  height:290px;
+  left: 60px;
+}
+
+#amputee, #senseless, #rebel, #tempestuous, #deadly-secret {
+  top: 6035px;
+  width: 215px;
+  height:675px;
+}
+#amputee {
+  left: 60px;
+}
+#senseless {
+  left: 295px;
+}
+#rebel {
+  @include center;
+}
+#tempestuous {
+  right: 295px;
+}
+#deadly-secret {
+  right: 60px;
+}

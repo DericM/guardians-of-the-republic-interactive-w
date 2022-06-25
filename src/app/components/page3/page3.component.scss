@@ -1,0 +1,190 @@
+@mixin center() {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page {
+  background: url('/assets/page3.jpeg');
+  height: 7500px;
+  width: 1280px;
+}
+
+#typical, #code-doctrinaire, #living-force {
+  top: 600px;
+  width: 360px;
+  height: 425px;
+}
+#typical{
+  left: 75px;
+}
+#code-doctrinaire{
+  @include center;
+}
+#living-force{
+  right: 75px;
+}
+
+#view{
+  top: 1050px;
+}
+
+#unifying-force, #other-heterodoxy, #major-heterodoxy {
+  top: 1050px;
+  width: 360px;
+  height: 425px;
+}
+#unifying-force{
+  left: 75px;
+}
+#other-heterodoxy{
+  @include center;
+}
+#major-heterodoxy{
+  right: 75px;
+}
+
+#archetype{
+  top: 1785px;
+}
+
+#jedi-guardian, #jedi-consular, #jedi-sentinel {
+  top: 1785px;
+  width: 360px;
+  height: 375px;
+}
+#jedi-guardian{
+  left: 75px;
+}
+#jedi-consular{
+  @include center;
+}
+#jedi-sentinel{
+  right: 75px;
+}
+
+#basic-force-powers{
+  top: 2435px;
+}
+
+#telekinesis, #force-barrier, #force-sense {
+  top: 2435px;
+  width: 360px;
+  height: 510px;
+}
+#telekinesis{
+  left: 75px;
+}
+#force-barrier{
+  @include center;
+}
+#force-sense{
+  right: 75px;
+}
+
+#force-control, #force-confusion, #force-healing {
+  top: 2970px;
+  width: 360px;
+  height: 510px;
+}
+#force-control{
+  left: 75px;
+}
+#force-confusion{
+  @include center;
+}
+#force-healing{
+  right: 75px;
+}
+
+#force-empathy, #mental-shields, #farsight {
+  top: 3505px;
+  width: 360px;
+  height: 510px;
+}
+#force-empathy{
+  left: 75px;
+}
+#mental-shields{
+  @include center;
+}
+#farsight{
+  right: 75px;
+}
+
+#animal-bonding, #force-body, #force-whirlwind {
+  top: 4450px;
+  width: 360px;
+  height: 550px;
+}
+#animal-bonding{
+  left: 75px;
+}
+#force-body{
+  @include center;
+}
+#force-whirlwind{
+  right: 75px;
+}
+
+#force-repulse, #force-revitalize, #battle-precognition {
+  top: 5030px;
+  width: 360px;
+  height: 550px;
+}
+#force-repulse{
+  left: 75px;
+}
+#force-revitalize{
+  @include center;
+}
+#battle-precognition{
+  right: 75px;
+}
+
+#force-stasis, #shatterpoint, #force-cloak {
+  top: 5605px;
+  width: 360px;
+  height: 550px;
+}
+#force-stasis{
+  left: 75px;
+}
+#shatterpoint{
+  @include center;
+}
+#force-cloak{
+  right: 75px;
+}
+
+#force-light, #force-lightning, #battle-meditation {
+  top: 6180px;
+  width: 360px;
+  height: 600px;
+}
+#force-light{
+  left: 75px;
+}
+#force-lightning{
+  @include center;
+}
+#battle-meditation{
+  right: 75px;
+}
+
+#force-immunity, #advanced-tutaminis, #sever-force {
+  top: 6805px;
+  width: 360px;
+  height: 600px;
+}
+#force-immunity{
+  left: 75px;
+}
+#advanced-tutaminis{
+  @include center;
+}
+#sever-force{
+  right: 75px;
+}
+

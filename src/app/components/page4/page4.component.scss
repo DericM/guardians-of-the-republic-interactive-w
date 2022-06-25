@@ -1,0 +1,160 @@
+@mixin center() {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page {
+  background: url('/assets/page4.jpeg');
+  height: 7500px;
+  width: 1280px;
+}
+
+#lightsaber-color{
+  top: 435px;
+}
+
+#blue, #green, #yellow {
+  top: 435px;
+  width: 360px;
+  height: 350px;
+}
+#blue{
+  left: 75px;
+}
+#green{
+  @include center
+}
+#yellow{
+  right: 75px;
+}
+
+#white, #purple, #unconventional {
+  top: 810px;
+  width: 360px;
+  height: 350px;
+}
+#white{
+  left: 75px;
+}
+#purple{
+  @include center
+}
+#unconventional{
+  right: 75px;
+}
+
+#lightsaber-design{
+  top: 1385px;
+}
+
+#standard, #curved {
+  top: 1385px;
+  width: 530px;
+  height: 280px;
+}
+#standard{
+  left: 100px;
+}
+#curved{
+  right: 100px;
+}
+
+#shoto, #double-bladed {
+  top: 1690px;
+  width: 530px;
+  height: 280px;
+}
+#shoto{
+  left: 100px;
+}
+#double-bladed{
+  right: 100px;
+}
+
+#pike, #other {
+  top: 1995px;
+  width: 530px;
+  height: 280px;
+}
+#pike{
+  left: 100px;
+}
+#other{
+  right: 100px;
+}
+
+#lightsaber-mods{
+  top: 2475px;
+}
+
+#concealed, #dual-phase, #dueling-lens, #trapped-grip, #waterproofed {
+  top: 2475px;
+  width: 215px;
+  height: 500px;
+}
+#concealed{
+  left: 60px + 13px;
+}
+#dual-phase{
+  left: 295px + 13px;
+}
+#dueling-lens{
+  left: 525px + 20px;
+}
+#trapped-grip{
+  right: 298px - 13px;
+}
+#waterproofed{
+  right: 60px - 13px;
+}
+
+#lightsaber-form{
+  top: 3425px;
+}
+
+#shii-cho, #makashi, #soresu {
+  top: 3425px;
+  width: 360px;
+  height: 500px;
+}
+#shii-cho{
+  left: 75px;
+}
+#makashi{
+  @include center
+}
+#soresu{
+  right: 75px;
+}
+
+#ataru, #shien, #djem-so {
+  top: 3950px;
+  width: 360px;
+  height: 500px;
+}
+#ataru{
+  left: 75px;
+}
+#shien{
+  @include center
+}
+#djem-so{
+  right: 75px;
+}
+
+// #ataru, #shien, #djem-so {
+//   top: 3950px;
+//   width: 360px;
+//   height: 500px;
+// }
+// #ataru{
+//   left: 75px;
+// }
+// #shien{
+//   @include center
+// }
+// #djem-so{
+//   right: 75px;
+// }

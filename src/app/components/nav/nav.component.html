@@ -1,0 +1,14 @@
+<nav>
+  <mat-nav-list>
+    <ng-container *ngFor='let page of nav'>
+      <mat-expansion-panel hideToggle [expanded]="page.open" (click)="toggle(page.label)">
+        <mat-expansion-panel-header>
+          <a mat-list-item [routerLink]="page.label"> <b>{{page.label | titlecase}}</b> </a>
+        </mat-expansion-panel-header>
+        <ng-container *ngFor='let catagory of page.catagories'>
+          <a mat-list-item [routerLink]="page.label" [fragment]="catagory.id" > {{catagory.label}} </a>
+        </ng-container>
+      </mat-expansion-panel>
+    </ng-container>
+  </mat-nav-list>
+</nav>
